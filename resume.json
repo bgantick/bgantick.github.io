@@ -1,0 +1,183 @@
+{
+  "basics": {
+    "name": "Brian Gantick",
+    "label": "Front-end Developer",
+    "picture": "",
+    "email": "bgantick@gmail.com",
+    "phone": "(215)796-3615",
+    "website": "http://www.briangantick.com",
+    "summary": "I'm a front-end developer currently residing in Philadelphia, PA. I believe in valid, semantic, and highly organized markup. I have a penchant for clean and simple interfaces that are based on optimizing user experience. Web design is my passion and I strive to make the internet a better place through my work. I like to work with companies and organizations that can help me grow as a designer and developer and allow me to contribute to the field in a meaningful way.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Boston",
+      "state": "Massachusetts",
+      "countryCode": "US"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "bgantick",
+      "url": "https://twitter.com/bgantick"
+    },
+    {
+      "network": "GitHub",
+      "username": "bgantick",
+      "url": "https://github.com/bgantick"
+    },
+    {
+      "network": "LinkedIn",
+      "username": "Brian Gantick",
+      "url": "https://www.linkedin.com/pub/brian-gantick/56/b23/28a"
+    }]
+  },
+  "experience": [{
+    "company": "Freelance",
+    "location": "Philadelphia, PA",
+    "position": "Web Designer, Front End Developer",
+    "website": "http://www.briangantick.com",
+    "startDate": "2011-03-01",
+    "endDate": "",
+    "summary": "I build websites for clients in the Philadelphia area. Whether it's from the ground up, or giving an existing site a modern face lift."
+  },
+  {
+    "company": "VIUS",
+    "location": "Philadelphia, PA",
+    "position": "Developer",
+    "website": "http://www.vius.co",
+    "startDate": "2014-07-01",
+    "endDate": "2015-07-01",
+    "summary": ""
+  },
+  {
+    "company": "VIUS",
+    "location": "Philadelphia, PA",
+    "position": "Junior Developer",
+    "website": "http://www.vius.co",
+    "startDate": "2014-02-01",
+    "endDate": "2014-07-01",
+    "summary": ""
+  },
+  {
+    "company": "University of Pennsylvania",
+    "location": "Philadelphia, PA",
+    "position": "Research Specialist",
+    "website": "http://www.med.upenn.edu/apps/faculty/index.php/g20000320/p16752",
+    "startDate": "2010-01-01",
+    "endDate": "2011-07-01",
+    "summary": "Conducted biomedical/genetic research using C. elegans as a model organism. Employed the use of fluorescent microscopy and various biochemical/genetic assays as well as bioinformatics."
+  },
+  {
+    "company": "Monell Chemical Senses Center",
+    "location": "Philadelphia, PA",
+    "position": "Research Technician",
+    "website": "http://www.monell.org/faculty/people/danielle_reed",
+    "startDate": "2007-11-01",
+    "endDate": "2009-12-01",
+    "summary": "Conducted studies in quantitative/behavioral genetics and provided analysis of the results."
+  }],
+  "education": [{
+    "institution": "University of the Arts",
+    "location": "Philadelphia, PA",
+    "area": "Web Design and Development",
+    "studyType": "Continuing Education",
+    "startDate": "2012-01-01",
+    "endDate": "2014-02-01"
+  },
+  {
+    "institution": "Philadelphia University",
+    "location": "Philadelphia, PA",
+    "area": "Biopsychology",
+    "studyType": "Bachelor of Science (B.S.)",
+    "startDate": "2003-08-01",
+    "endDate": "2007-08-01"
+  }],
+  "projects":[{
+    "name": "",
+    "url": "",
+    "description": "",
+    "role": ""
+  },
+  {
+    "name": "",
+    "url": "",
+    "description": "",
+    "role": ""
+  },
+  {
+    "name": "",
+    "url": "",
+    "description": "",
+    "role": ""
+  }],
+  "skills": [{
+    "name": "HTML",
+    "level": "Advanced"
+  },
+  {
+    "name": "CSS/SCSS",
+    "level": "Advanced"
+  },
+  {
+    "name": "Javascript",
+    "level": "Basic"
+  },
+  {
+    "name": "jQuery",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Gulp",
+    "level": "Basic"
+  },
+  {
+    "name": "JSON",
+    "level": "Basic"
+  },
+  {
+    "name": "Ember",
+    "level": "Beginner"
+  },
+  {
+    "name": "Ruby on Rails",
+    "level": "Beginner"
+  },
+  {
+    "name": "Bower",
+    "level": "Basic"
+  },
+  {
+    "name": "Git",
+    "level": "Intermediate"
+  },
+  {
+    "name": "PHP",
+    "level": "Intermediate"
+  },
+  {
+    "name": "WordPress",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Illustrator",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Sketch",
+    "level": "Advanced"
+  }],
+  "interests": [{
+    "name": "Science"
+  },
+  {
+    "name": "Technology"
+  },
+  {
+    "name": "Comic Books"
+  },
+  {
+    "name": "Dogs"
+  },
+  {
+    "name": "Hockey"
+  }]
+}
