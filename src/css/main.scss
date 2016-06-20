@@ -1,0 +1,101 @@
+@import "../../bower_components/font-awesome/css/font-awesome.min.css";
+
+/* Colors */
+$blackish: #333;
+$lt-gray: #fefefe;
+$dark-gray: #888;
+$blue: #116db9;
+
+/* Typography */
+$base-font-size: 17px;
+
+.big {
+  font-size: 2.2em;
+  margin: 0 0 1em;
+}
+
+.title {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $dark-gray;
+  font-size: 1.1em;
+  margin: 0 0 0.3em;
+}
+
+/* Utilities */
+.sr-only {
+  display: block;
+  text-indent: -9999em;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 100ms ease-in;
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $blue;
+    outline: 0;
+  }
+}
+
+::selection {
+  background: $blue;
+  color: $lt-gray;
+}
+
+/* Main Styles */
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  background: $lt-gray;
+  color: $blackish;
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 600px;
+  margin: auto;
+}
+
+nav {
+  text-align: right;
+  margin: 0.8em 0;
+  a {
+    margin-left: 0.5em;
+  }
+}
+
+header {
+  height: 100px;
+  margin: 2em 0;
+  img {
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1em;
+  }
+  h1 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+  span {
+    display: block;
+  }
+}
+
+footer {
+  a {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: $blackish;
+    transition: all 100ms ease-in;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+}

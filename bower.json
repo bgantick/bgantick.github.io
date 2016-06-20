@@ -1,0 +1,22 @@
+{
+  "name": "home",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Brian Gantick"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bgantick/bgantick.github.io",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

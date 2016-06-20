@@ -1,15 +1,30 @@
-var autoprefixer = require('autoprefixer'),
+var bower = require('gulp-bower'),
     browserSync = require('browser-sync'),
-    clean = require('postcss-clean'),
     gulp = require('gulp'),
     gutil = require('gulp-util'),
     include = require('gulp-include'),
     jshint = require('gulp-jshint'),
     postcss = require('gulp-postcss'),
-    precss = require('precss'),
     rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify');
+
+var config = {
+    bowerDir: './bower_components' 
+}
+
+gulp.task('bower', function(){
+  return bower();
+});
+
+//Move FA icon fonts
+gulp.task('icons', ['bower'], function() { 
+  return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*') 
+    .pipe(gulp.dest('./assets/fonts')); 
+});
+
+//Initialize project
+gulp.task('init', ['icons']);
 
 // spin up a server
 gulp.task('browserSync', function() {
@@ -22,14 +37,15 @@ gulp.task('browserSync', function() {
 
 gulp.task('css', function () {
   var processors = [
-    autoprefixer,
-    clean,
-    precss
+    require('precss'),
+    require('autoprefixer'),
+    require('postcss-clean')
   ];
-  return gulp.src('./src/css/*.css')
+  return gulp.src('./src/css/*.scss')
     .pipe( sourcemaps.init() )
     .pipe( postcss(processors) )
     .pipe( sourcemaps.write('.') )
+    .pipe(rename('main.css'))
     .pipe( gulp.dest('./assets/css') )
     .pipe(browserSync.reload({ stream: true }));
 });
@@ -55,7 +71,7 @@ gulp.task('reload', function() {
 
 //Watch for changes
 gulp.task('watch', ['browserSync'], function() {
-  gulp.watch('./src/**/*.css', ['css']);
+  gulp.watch('./src/**/*.scss', ['css']);
   gulp.watch('./src/**/*.js', ['scripts']);
   gulp.watch('*.html', ['reload'] );
 });
