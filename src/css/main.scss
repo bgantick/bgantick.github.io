@@ -4,8 +4,10 @@
 /* Colors */
 $blackish: #333;
 $lt-gray: #fefefe;
-$dark-gray: #888;
+$dark-gray: #585858;
 $blue: #116db9;
+$twitter: #1b95e0;
+$linkedin: #1e87bd;
 
 /* Typography */
 $base-font-size: 17px;
@@ -21,12 +23,6 @@ $base-font-size: 17px;
   color: $dark-gray;
   font-size: 1.1em;
   margin: 0 0 0.3em;
-}
-
-/* Utilities */
-.sr-only {
-  display: block;
-  text-indent: -9999em;
 }
 
 a {
@@ -47,6 +43,12 @@ a {
 ::selection {
   background: $blue;
   color: $lt-gray;
+}
+
+/* Utilities */
+.sr-only {
+  display: block;
+  text-indent: -9999em;
 }
 
 /* Main Styles */
@@ -87,6 +89,7 @@ header {
   }
   span {
     display: block;
+    color: $dark-gray;
   }
 }
 
@@ -94,11 +97,35 @@ footer {
   a {
     font-size: 1.5em;
     margin-right: 0.5em;
-    color: $blackish;
+    color: #bbb;
     transition: all 100ms ease-in;
-    &:hover,
-    &:focus {
-      color: $blue;
+    &:nth-child(2) {
+      &:hover,
+      &:focus {
+        color: $twitter;
+        border-bottom: 2px solid $twitter;
+      }
+    }
+    &:nth-child(3){
+      &:hover,
+      &:focus {
+        color: $blackish;
+        border-bottom: 2px solid $blackish;
+      }
+    }
+    &:nth-child(4){
+      &:hover,
+      &:focus {
+        color: $linkedin;
+        border-bottom: 2px solid $linkedin;
+      }
+    }
+    &:nth-child(5){
+      &:hover,
+      &:focus {
+        color: #467a74;
+        border-bottom: 2px solid #467a74;
+      }
     }
   }
 }
