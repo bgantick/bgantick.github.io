@@ -19,7 +19,7 @@ gulp.task('bower', function(){
 
 //Move FA icon fonts
 gulp.task('icons', ['bower'], function() { 
-  return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*') 
+  return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*') 
     .pipe(gulp.dest('./assets/fonts')); 
 });
 
