@@ -16,6 +16,23 @@
       ga('create', 'UA-79751103-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
   </head>
   <body>
     <nav>
@@ -27,22 +44,38 @@
       <img src="/assets/images/profile.jpg" alt="" />
       <h1>Brian Gantick</h1>
       <span>Front-end/UI developer</span>
-      <a href="https://twitter.com/bgantick">@bgantick</a>
+      <!-- <a href="https://twitter.com/bgantick">@bgantick</a> -->
+      <a href="https://twitter.com/bgantick" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">
+        Follow @bgantick
+      </a>
+      <script>
+        !function(d,s,id){
+          var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+          if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js,fjs);
+          }
+        }(document, 'script', 'twitter-wjs');
+      </script>
     </header>
     <main>
-      <section id="intro">
+      <section class="intro">
         <p class="big">
           I make websites for humans (and sometimes robots), specializing in bridging the gap between design and development. Passionate about accessibility, design systems, and open source technology. Trying to make the world a better place through sustainable and responsible development.
         </p>
       </section>
+      <hr>
+      <section class="contact">
+        <h2 class="title">Find me elsewhere:</h2>
+        <a href="https://twitter.com/bgantick"><i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
+        <a href="https://github.com/bgantick"><i class="fa fa-github" aria-hidden="true" title="GitHub"></i><span class="sr-only">GitHub</span></a>
+        <a href="https://www.linkedin.com/in/brian-gantick-28ab2356"><i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>
+        <!-- <a href="#"><i class="fa fa-envelope" aria-hidden="true" title="Contact"></i><span class="sr-only">Contact</span></a> -->
+      </section>
     </main>
-    <hr>
     <footer>
-      <h2 class="title">Find me elsewhere:</h2>
-      <a href="https://twitter.com/bgantick"><i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
-      <a href="https://github.com/bgantick"><i class="fa fa-github" aria-hidden="true" title="GitHub"></i><span class="sr-only">GitHub</span></a>
-      <a href="https://www.linkedin.com/in/brian-gantick-28ab2356"><i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>
-      <!-- <a href="#"><i class="fa fa-envelope" aria-hidden="true" title="Contact"></i><span class="sr-only">Contact</span></a> -->
+      Made with <i class="fa fa-heart"><span class="sr-only">Love</span></i>
     </footer>
   </body>
 </html>

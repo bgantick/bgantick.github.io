@@ -8,9 +8,11 @@ $dark-gray: #585858;
 $blue: #116db9;
 $twitter: #1b95e0;
 $linkedin: #1e87bd;
+$red: #e10004;
 
 /* Typography */
 $base-font-size: 17px;
+$text-marg: 0 0 0.3em;
 
 .big {
   font-size: 1.8em;
@@ -22,7 +24,7 @@ $base-font-size: 17px;
   text-transform: uppercase;
   color: $dark-gray;
   font-size: 1.1em;
-  margin: 0 0 0.3em;
+  margin: $text-marg;
 }
 
 a {
@@ -79,6 +81,7 @@ html {
 }
 
 body {
+  position: relative;
   background: $lt-gray;
   color: $blackish;
   font-family: 'Source Sans Pro', sans-serif;
@@ -113,10 +116,11 @@ header {
   span {
     display: block;
     color: $dark-gray;
+    margin: $text-marg;
   }
 }
 
-footer {
+.contact {
   a {
     font-size: 1.5em;
     margin-right: 0.5em;
@@ -150,5 +154,17 @@ footer {
         border-bottom: 2px solid #467a74;
       }
     }
+  }
+}
+
+footer {
+  font-size: 0.8em;
+  text-align: right;
+  position: absolute;
+  right: 1.2em;
+  bottom: 5.2em;
+  color: $dark-gray;
+  i {
+    color: $red;
   }
 }
