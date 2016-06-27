@@ -11,3 +11,16 @@ window.onload = function() {
     }
   }
 };
+
+(function($){
+  $(document).ready(function(){
+    $('a.form-toggle').click(function(e){
+      e.preventDefault();
+      $('#form-wrap').toggleClass('visible');
+    });
+    $('a.dismiss').click(function(e){
+      e.preventDefault();
+      $('#form-wrap').toggleClass('visible');
+    });
+  });
+})(jQuery);
