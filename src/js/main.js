@@ -13,7 +13,9 @@ window.onload = function() {
 };
 
 (function($){
+
   $(document).ready(function(){
+
     $('a.form-toggle').click(function(e){
       e.preventDefault();
       $('#form-wrap').toggleClass('visible');
@@ -22,5 +24,46 @@ window.onload = function() {
       e.preventDefault();
       $('#form-wrap').toggleClass('visible');
     });
+
+    var mailgunURL;
+
+    mailgunURL = 'http://www.briangantick.com/api/mailer.php';
+
+    $('#form-wrap form').on('submit',function(e) {
+      e.preventDefault();
+
+      $('#form-wrap form').append('Your submission is being processed...');
+
+      $.ajax({
+        type : 'POST',
+        cache : false,
+        url : mailgunURL,
+        data : $(this).serialize(),
+        success : function(data) {
+          responseSuccess(data);
+          console.log(data);
+        },
+        error : function(data) {
+          console.log('Silent failure.');
+        }
+      });
+
+      return false;
+
+    });
+
+    function responseSuccess(data) {
+
+      data = JSON.parse(data);
+
+      if(data.status === 'success') {
+        $('#form-wrap').html('Submission sent succesfully.');
+      } else {
+        $('#form-wrap').html('Submission failed, please contact directly.');
+      }
+
+    }
+
   });
+
 })(jQuery);
