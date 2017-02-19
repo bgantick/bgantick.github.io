@@ -217,6 +217,9 @@ footer {
   bottom: 5.2em;
   @extend .small;
   i {
-    color: $red;
+    color: $dark-gray;
+    &.fa-heart {
+      color: $red;
+    }
   }
 }
