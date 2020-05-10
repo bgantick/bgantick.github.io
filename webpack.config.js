@@ -8,7 +8,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
-        exclude: /node_modules/,
+        exclude: /node_modules/
       },
       {
         test: /\.scss$/,
@@ -17,7 +17,19 @@ module.exports = {
           'css-loader',
           'postcss-loader',
           'sass-loader'
-        ]
+        ],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts',  
+            publicPath: '../fonts' 
+          }
+        }]
       }
     ]
   },

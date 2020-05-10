@@ -1,4 +1,16 @@
-@import '_color';
-@import '_type';
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
-@import '_buttons';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import 'settings/_color';
+@import 'settings/_fonts';
+
+@import 'base/_reset';
+@import 'base/_document';
+
+@import 'objects/_type';
+
+@import 'components/_header';
+@import 'components/_section';
