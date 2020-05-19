@@ -17,35 +17,48 @@
       ga('send', 'pageview');
     </script>
   </head>
-  <body class="o-body">
-    <header class="c-header">
-      <h1 class="c-header__title">Brian Gantick | <span class="c-header__tag">web maker</span></h1>
-      <nav class="c-header__nav">
-        <a class="c-header__link" href="#about">about</a>
-        <a class="c-header__link" href="#work">work</a>
-        <a class="c-header__link" href="#contact">contact</a>
-      </nav>
-      <div class="c-header__toggle">
-        <label class="sr-only" for="theme">toggle theme</label>
-        <input type="checkbox" name="theme" id="theme">
-      </div>
-    </header>
-    <main>
-      <section id="about" class="c-section">
-        <p>I make websites for humans (and sometimes robots), specializing in bridging the gap between design and development. Passionate about accessibility, design systems, and open source technology.</p>
-        <a href="https://twitter.com/bgantick"><i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
-        <a href="https://github.com/bgantick"><i class="fab fa-github" aria-hidden="true" title="GitHub"></i><span class="sr-only">GitHub</span></a>
-        <a href="https://www.linkedin.com/in/brian-gantick"><i class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>
-      </section>
-      <section id="work" class="c-section">
-
-      </section>
-      <section id="contact" class="c-section">
-        <h2 class="title">Find me elsewhere:</h2>
-        <a href="https://twitter.com/bgantick"><i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
-        <a href="https://github.com/bgantick"><i class="fab fa-github" aria-hidden="true" title="GitHub"></i><span class="sr-only">GitHub</span></a>
-        <a href="https://www.linkedin.com/in/brian-gantick"><i class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>
-      </section>
-    </main>
+  <body>
+    <div class="o-container o-container--base">
+      <header class="c-header">
+        <h1 class="c-header__title">Brian Gantick<span class="c-header__tag"> | web maker</span></h1>
+        <div class="c-header__content">
+          <!-- <nav class="c-header__nav">
+            <a class="c-header__link" href="#about">about</a>
+            <a class="c-header__link" href="#work">work</a>
+            <a class="c-header__link" href="#contact">contact</a>
+          </nav> -->
+          <div class="c-header__toggle">
+            <label>
+              <span class="sr-only">toggle theme</span>
+              <input class="c-header__toggle-input" type="checkbox" name="theme">
+              <span class="c-header__toggle-graphic"></span>
+            </label>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section id="about" class="c-section">
+          <div class="c-section__inner">
+            <p class="c-section__text">
+              I make websites for humans (and sometimes robots), specializing in bridging the gap between design and development. Passionate about accessibility, design systems, and open source technology.
+            </p>
+            <div class="c-section__footer">
+              <a class="c-section__icon-link c-section__icon-link--twitter" href="https://twitter.com/bgantick">
+                <i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+              <a class="c-section__icon-link c-section__icon-link--github" href="https://github.com/bgantick">
+                <i class="fab fa-github" aria-hidden="true" title="GitHub"></i>
+                <span class="sr-only">GitHub</span>
+              </a>
+              <a class="c-section__icon-link c-section__icon-link--linkedin" href="https://www.linkedin.com/in/brian-gantick">
+                <i class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

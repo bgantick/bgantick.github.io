@@ -1,1 +1,50 @@
 $font-size-base: 62.5%;
+
+$font-family: (
+  sans: #{'Quicksand', sans-serif}
+);
+
+$font-size: (
+  title: (
+    base: 2.4rem
+  ),
+  paragraph: (
+    large: 2.4rem,
+    base: 2rem
+  )
+);
+
+$font-weight: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600
+);
+
+@function family($key) {
+  @if map-has-key($font-family, $key) {
+    @return map-get($font-family, $key);
+  }
+  @warn 'Unknown `#{$key}` in $font-family.';
+  @return null;
+}
+
+@function weight($key) {
+  @if map-has-key($font-weight, $key) {
+    @return map-get($font-weight, $key);
+  }
+  @warn 'Unknown `#{$key}` in $font-weight.';
+  @return null;
+}
+
+@mixin font($family: null, $type: null, $size: null, $weight: null) {
+  @if $family {
+    font-family: family($family);
+  }
+  @if $type and $size {
+    font-size: map-get(map-get($font-size, $type), $size);
+  }
+  @if $weight {
+    font-weight: weight($weight);
+  }
+}
