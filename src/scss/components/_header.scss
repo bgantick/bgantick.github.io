@@ -10,11 +10,17 @@
 .c-header__title {
   @extend %o-title;
   @extend %o-title--base;
+  .o-body--dark & {
+    color: color(text-inverse)
+  }
 }
 
 .c-header__tag {
   font-weight: weight(regular);
   color: color(text-alt);
+  .o-body--dark & {
+    color: color(text-inverse-alt)
+  }
 }
 
 .c-header__nav,

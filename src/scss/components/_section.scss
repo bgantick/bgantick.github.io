@@ -6,6 +6,9 @@
   @extend %o-text;
   @extend %o-text--body;
   max-width: 68rem;
+  .o-body--dark & {
+    color: color(text-inverse)
+  }
 }
 
 .c-section__footer {
