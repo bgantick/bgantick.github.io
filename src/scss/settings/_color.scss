@@ -1,0 +1,43 @@
+$black: #000;
+$white: #FFF;
+$grey-dk: #1A1A1A;
+$grey-dk2: #2C2C2C;
+$grey-md: #737373;
+$grey: #BBB;
+$grey-lt: #EFEFEF;
+$blue: #0071F6;
+$twitter: #059FF5;
+$github: #24292E;
+$linkedin: #0076B7;
+
+$colors: (
+  text-primary: $grey-dk,
+  text-alt: $grey-md,
+  text-inverse: $white,
+  text-inverse-alt: $grey,
+  text-brand: $blue,
+  background: $white,
+  background-alt: $grey-dk2,
+  border-base: $grey-lt,
+  icon-base: $grey,
+  icon-twitter: $twitter,
+  icon-github: $github,
+  icon-linkedin: $linkedin,
+  shadow-base: $black
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @warn 'Unknown `#{$key}` in $colors.';
+  @return null;
+}
+
+@function color-alpha($color, $opacity) {
+  @if map-has-key($colors, $color) {
+    @return rgba(map-get($colors, $color), $opacity);
+  }
+  @warn 'Unknown `#{$color}` in $colors.';
+  @return null;
+}

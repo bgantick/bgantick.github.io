@@ -1,0 +1,45 @@
+.c-section {
+  padding: 10rem 0 0;
+}
+
+.c-section__text {
+  @extend %o-text;
+  @extend %o-text--body;
+  max-width: 68rem;
+  .o-body--dark & {
+    color: color(text-inverse)
+  }
+}
+
+.c-section__footer {
+  margin-top: 4rem;
+}
+
+.c-section__icon-link {
+  font-size: 2.6rem;
+  color: color(icon-base);
+  text-decoration: none;
+  margin-right: 1rem;
+  @include transition(color);
+}
+
+.c-section__icon-link--twitter {
+  &:hover,
+  &:focus {
+    color: color(icon-twitter);
+  }
+}
+
+.c-section__icon-link--github {
+  &:hover,
+  &:focus {
+    color: color(icon-github);
+  }
+}
+
+.c-section__icon-link--linkedin {
+  &:hover,
+  &:focus {
+    color: color(icon-linkedin);
+  }
+}

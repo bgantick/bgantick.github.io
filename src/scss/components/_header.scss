@@ -1,0 +1,83 @@
+.c-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  padding: 3.2rem 0 1.8rem;
+  border-bottom: $border-base;
+}
+
+.c-header__title {
+  @extend %o-title;
+  @extend %o-title--base;
+  .o-body--dark & {
+    color: color(text-inverse)
+  }
+}
+
+.c-header__tag {
+  font-weight: weight(regular);
+  color: color(text-alt);
+  .o-body--dark & {
+    color: color(text-inverse-alt)
+  }
+}
+
+.c-header__nav,
+.c-header__toggle {
+  display: inline-block;
+}
+
+.c-header__link {
+  @extend %o-text;
+  @extend %o-text--nav;
+  margin-left: 3rem;
+  text-decoration: none;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: color(text-brand);
+  }
+}
+
+.c-header__toggle {
+  margin-left: 4rem;
+}
+
+.c-header__toggle-input {
+  display: none;
+}
+
+.c-header__toggle-graphic {
+  position: relative;
+  display: block;
+  width: 7.4rem;
+  height: 4rem;
+  background: #69CBE0;
+  border: 4px solid #6DADBB;
+  border-radius: 4rem;
+  cursor: pointer;
+  @include transition(all);
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: #FFE925;
+    border: 4px solid #FBCC26;
+    border-radius: 2.8rem;
+  }
+}
+
+.c-header__toggle-input:checked ~ .c-header__toggle-graphic {
+  background: #170B2F;
+  border: 4px solid #473C5F;
+  &::after {
+    background: #737373;
+    border: 4px solid #878789;
+    left: 0.2rem;
+    right: auto;
+  }
+}

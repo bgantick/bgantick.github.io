@@ -1,0 +1,24 @@
+.o-text,
+.o-title,
+%o-text,
+%o-title {
+  color: color(text-primary);
+}
+
+.o-title--base,
+%o-title--base {
+  @include font(sans, title, base, semibold);
+  line-height: 1.4;
+}
+
+.o-text--body,
+%o-text--body {
+  @include font(sans, paragraph, base, light);
+  line-height: 1.31;
+}
+
+.o-text--nav,
+%o-text--nav {
+  @include font(sans, paragraph, large, semibold);
+  line-height: 1;
+}

@@ -1,0 +1,11 @@
+.o-body {
+  @include transition(background);
+}
+
+.o-body--light {
+  background: color(background);
+}
+
+.o-body--dark {
+  background: color(background-alt);
+}
